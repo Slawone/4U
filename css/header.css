@@ -1,3 +1,5 @@
+@import 'contacts.css';
+
 .header {
   width: 100%;
   min-height: 732px;
@@ -39,23 +41,6 @@
   flex-direction: column;
   align-items: center;
   gap: 4px;
-}
-
-.contacts__phone {
-  font-size: 24px;
-  line-height: 28px;
-  color: var(--white-color);
-}
-
-.contacts__btn {
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--white-color);
-  border-bottom: 1px solid var(--white-color);
-}
-
-.contacts__phone-icon {
-  display: none;
 }
 
 .header__content {
