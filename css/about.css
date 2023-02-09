@@ -1,0 +1,128 @@
+@import 'title.css';
+
+.about {
+  text-align: center;
+}
+
+.about__title {
+  margin-bottom: 25px;
+}
+
+.about__subtitle {
+  margin-bottom: 35px;
+  display: inline-block;
+  position: relative;
+}
+
+.about__subtitle:before {
+  content: "";
+  width: 43px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 50%;
+  left: -67px;
+  transform: translateY(-50%);
+}
+
+.about__subtitle:after {
+  content: "";
+  width: 43px;
+  height: 2px;
+  background-color: var(--main-color);
+  position: absolute;
+  top: 50%;
+  right: -67px;
+  transform: translateY(-50%);
+}
+
+.about__text {
+  font-size: 18px;
+  line-height: 25px;
+  max-width: 724px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.about__list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 50px;
+  counter-reset: count 0;
+}
+
+.about__item {
+  flex-basis: 196px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+}
+
+.about__item-icon {
+  width: 122px;
+  height: 122px;
+  background-color: var(--blue-color);
+  border-radius: 50%;
+  position: relative;
+}
+
+.about__item-icon:after {
+  content: counter(count);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--white-color);
+  font-size: 57px;
+  counter-increment: count;
+}
+
+.about__item-text {
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .about__subtitle:before {
+    width: 40px;
+    left: -63px;
+  }
+
+  .about__subtitle:after {
+    width: 40px;
+    right: -63px;
+  }
+
+  .about__item {
+    flex-basis: 180px;
+  }
+
+  .about__text {
+    font-size: 16px;
+    line-height: 23px;
+  }
+
+  .about__text-item {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about__text {
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  .about__list {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .about__item {
+    flex-basis: 166px;
+  }
+}
