@@ -1,3 +1,4 @@
+@import 'logo.css';
 @import 'contacts.css';
 
 .header {
@@ -79,21 +80,6 @@
     margin-bottom: 70px;
   }
 
-  .header__logo {
-    width: 60px;
-    height: 60px;
-  }
-
-  .contacts__phone {
-    font-size: 21px;
-    line-height: 25px;
-  }
-  
-  .contacts__btn {
-    font-size: 13px;
-    line-height: 15px;
-  }
-
   .header__content {
     max-width: 780px;
   }
@@ -120,16 +106,6 @@
   .header__logo {
     width: 40px;
     height: 40px;
-  }
-
-  .contacts__phone {
-    font-size: 18px;
-    line-height: 22px;
-  }
-  
-  .contacts__btn {
-    font-size: 10px;
-    line-height: 12px;
   }
 
   .header__content {
@@ -161,16 +137,6 @@
   .header__logo {
     width: 30px;
     height: 30px;
-  }
-
-  .contacts {
-    display: none;
-  }
-
-  .contacts__phone-icon {
-    display: block;
-    width: 24px;
-    height: 24px;
   }
 
   .header__content {
