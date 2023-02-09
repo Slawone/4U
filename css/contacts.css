@@ -9,7 +9,13 @@
   line-height: 19px;
   color: var(--white-color);
   border-bottom: 1px solid var(--white-color);
+  transition: color .2s ease-in;
 }
+
+.contacts__btn:hover {
+  color: var(--btn-color);
+  border-color: transparent;
+} 
 
 .contacts__phone-icon {
   display: none;
