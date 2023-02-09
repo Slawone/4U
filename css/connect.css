@@ -85,10 +85,6 @@
   border-bottom: 1px solid #4A76A8;;
 }
 
-.form__link:hover {
-  border-color: transparent;
-}
-
 @media (max-width: 1024px) {
   .form__input {
     width: 290px;
@@ -107,6 +103,12 @@
   .form__text {
     font-size: 17px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: 481px) {
+  .form__link:hover {
+    border-color: transparent;
   }
 }
 
