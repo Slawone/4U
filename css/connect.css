@@ -25,6 +25,7 @@
   margin-bottom: 17px;
   position: relative;
   z-index: 10;
+  margin-left: -24px;
 }
 
 .connect__subtitle {
@@ -71,7 +72,7 @@
 
 .form__btn {
   padding: 11px 38px;
-  margin-bottom: 50px;
+  margin-bottom: 54px;
 }
 
 .form__text {
@@ -86,8 +87,24 @@
 }
 
 @media (max-width: 1024px) {
+  .connect {
+    padding-top: 76px;
+  }
+
+  .connect__title {
+    margin-left: -10px;
+  }
+
+  .connect__subtitle {
+    margin-left: 17px;
+  }
+
+  .form__input-box {
+    gap: 13px;
+  }
+
   .form__input {
-    width: 290px;
+    max-width: 380px;
     padding: 8px 23px;
   }
 
@@ -97,7 +114,7 @@
   }
 
   .form__btn {
-    margin-bottom: 30px;
+    margin-bottom: 32px;
   }
 
   .form__text {
@@ -131,6 +148,7 @@
   }
 
   .form__input {
+    max-width: 289px;
     padding: 6px 18px;
   }
 

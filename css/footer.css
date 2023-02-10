@@ -2,7 +2,7 @@
 @import 'contacts.css';
 
 .footer {
-  padding: 60px 0;
+  padding: 45px 0;
   background-color: #2F324B;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .footer__author {
-  font-size: 12px;
+  font-size: 13px;
   line-height: 17px;
   color: var(--white-color);
 }
@@ -39,8 +39,12 @@
 }
 
 @media (max-width: 1024px) {
+  .footer {
+    padding-top: 25px;
+  }
   .footer__author {
     opacity: 0.5;
+    margin-left: -12px;
   }
 }
 
